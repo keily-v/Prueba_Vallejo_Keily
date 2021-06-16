@@ -27,7 +27,12 @@ public class Estudiante {
             //this.notas.length
             suma += this.nota[i];
         }
+        
         this.promedio = suma/this.nota.length;
+    }
+    
+    public double getPromedio(){
+        return this.promedio;
     }
     
     public void setEstudiantesEncimaPromedio(){
