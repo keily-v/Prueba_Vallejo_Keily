@@ -33,9 +33,11 @@ public class Estudiante {
         return genero;
     }
 
-    public double getNota() {
+    public double[] getNota() {
         return nota;
     }
+
+   
     
     @Override
     public String toString(){
