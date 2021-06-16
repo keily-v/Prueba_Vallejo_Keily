@@ -2,6 +2,7 @@
 package test;
 
 import dominio.Estudiante;
+import java.time.chrono.ThaiBuddhistEra;
 import java.util.Scanner;
 
 public class PruebaEstudiante {
@@ -12,18 +13,15 @@ public class PruebaEstudiante {
         
         Scanner datos = new Scanner(System.in);
         
-        
-        
         System.out.println("Ingrese el numero de estudiantes:");
         int nstudiante = datos.nextInt();
         
         double[] notas = new double[nstudiante];
         
-        Estudiante estudianteA = new Estudiante();
-        
         Estudiante[] estudiantes;
         estudiantes = new Estudiante[nstudiante];
         llenaDatos(estudiantes);
+        
         
         System.out.println("Estudiantes pertenecientes al curso");
         for(int i=0; i< estudiantes.length;i++){
